@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Course Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I have two years of education in Computer Science, which has given me a strong foundation in programming 
+            and software development. During this time, I have gained basic knowledge of HTML, CSS, and JavaScript,
+             allowing me to create simple and responsive web pages. My understanding of HTML includes structuring content 
+             properly using semantic elements, while in CSS, I have worked with styling techniques such as flexbox, 
+             grid, and responsive design to enhance user interfaces.<br><br>
+    
+             In JavaScript, I have learned how to add interactivity to web pages using DOM manipulation, event handling, 
+             and basic functions. Although I am still improving my JavaScript skills, I am familiar with fundamental 
+             concepts such as variables, loops, conditionals, and basic API integration.<br><br>
+            
+             Additionally, I have a basic understanding of Java, where I have worked with object-oriented programming concepts 
+             like classes, objects, and methods. I have also experimented with simple Java applications, focusing on logical structures, 
+             loops, and conditional statements. While my experience with Java is still at the beginner level, I am continuing to learn and 
+             improve my understanding of the language.<br><br>
+            
+             At this stage, I am focused on strengthening my front-end development skills and gaining more hands-on experience with building 
+             interactive web pages. My goal is to continue expanding my knowledge and eventually explore back-end development to become a 
+             more well-rounded developer.
+    </section>
+    
+    <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="projects-container">
+
+            <div class="project" id="project1">
+                <h3>staysmart
+                </h3>
+                <p class="project-description">This scheduling program allows users to efficiently manage their time by creating and organizing daily, weekly, or monthly schedules. Users can add, update, and remove appointments, set reminders, and view their events in an easy-to-read calendar interface. The program is designed with a simple, user-friendly interface and supports multiple calendar views, making it ideal for both personal and professional use. Additional features include the ability to sync with online calendars, set recurring events, and manage tasks.
+
+                    <ul>
+                        <li><a href="https://github.com/CaledWlch1/staysmart.git">Github Link</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="project" id="project2">
+                <h3>chairbanking
+                </h3>
+                <p class="project-description">chairbanking is a simple yet secure application that helps users manage their personal finances. The program allows users to create accounts, check balances, make deposits and withdrawals, and transfer money between accounts. Designed for ease of use, the program includes features like transaction history, account summaries, and even budget tracking. Security is prioritized, with features like password protection and account encryption to ensure the safety of user data. Whether for everyday banking or managing multiple accounts, this program provides a reliable solution.
+                    <ul>
+                        <li><a href="https://github.com/CaledWlch1/staysmart.git">Github Link</a></li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="project" id="project2">
+                <h3>Explore-PH-Tours
+                </h3>
+                <p class="project-description">The Touring Service application is designed to help users plan and book their travel experiences seamlessly. It offers a variety of features, including browsing a wide range of tour packages, checking availability, and viewing detailed itineraries. Users can search for tours based on their destination, interests, or travel dates, and easily compare different options. The program also allows users to make bookings, track their tour history, and receive recommendations based on preferences. Whether planning a solo adventure, family trip, or group excursion, the Touring Service ensures a smooth and memorable travel experience with real-time updates and customer support.
+                    <ul>
+                        <li><a href="https://github.com/CaledWlch1/Explore-PH-Tours.git">Github Link</a></li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </section>
+    
+    
+    <section id="awards">
+        <h2>Awards & Certifications</h2>
+        <p>No Awards</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            <ul>
+                <li><a href="mailto:bitacurapaulo5@gmail.com">Email</a></li>
+            </ul>
+        </p>
+    </section>
+    <script>
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', function() {
+                this.classList.toggle('open');
+            });
+        });
+    </script>
+    
+
+</body>
+</html>
