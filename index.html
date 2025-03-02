@@ -3,103 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Course Portfolio</title>
+    <title>Paulo Bitacura | Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fa-solid fa-user-secret"></i> About</a></li>
+                    <li><a href="#skills"><i class="fa-solid fa-laptop-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fa-solid fa-code-branch"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>I have two years of education in Computer Science, which has given me a strong foundation in programming 
-            and software development. During this time, I have gained basic knowledge of HTML, CSS, and JavaScript,
-             allowing me to create simple and responsive web pages. My understanding of HTML includes structuring content 
-             properly using semantic elements, while in CSS, I have worked with styling techniques such as flexbox, 
-             grid, and responsive design to enhance user interfaces.<br><br>
+    <main>
+        <section id="about" class="container section-padding">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-user-secret"></i> About Me</h2>
+            </div>
+            <div class="section-content">
+                <h1>Paulo Bitacura</h1>
+                <p class="tagline">Computer Science Student & Developer</p>
+                <p>Computer Science student with a passion for developing innovative solutions. I am committed to expanding my technical skillset through hands-on projects and continuous learning. My experience spans front-end development and basic back-end programming, with a focus on creating intuitive, user-friendly applications.</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="container section-padding">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-laptop-code"></i> Technical Skills</h2>
+            </div>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Front-End Development</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">HTML5</span><div class="progress-bar"><div class="progress" style="width: 65%"></div></div></li>
+                            <li><span class="skill-name">CSS3</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></li>
+                            <li><span class="skill-name">JavaScript</span><div class="progress-bar"><div class="progress" style="width: 50%"></div></div></li>
+                            <li><span class="skill-name">Responsive Design</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Back-End Development</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">Java</span><div class="progress-bar"><div class="progress" style="width: 55%"></div></div></li>
+                            <li><span class="skill-name">Object-Oriented Programming</span><div class="progress-bar"><div class="progress" style="width: 60%"></div></div></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="skills-description">
+                    <p>With two years of Computer Science education, I've developed a strong foundation in programming fundamentals. My experience includes:</p>
+                    <ul>
+                        <li>Creating responsive web pages using HTML5, CSS3, and JavaScript</li>
+                        <li>Implementing modern layout techniques including Flexbox and CSS Grid</li>
+                        <li>Developing interactive elements with DOM manipulation and event handling</li>
+                        <li>Building object-oriented applications with Java</li>
+                    </ul>
+                    <p>I am continuously expanding my skillset and currently focused on strengthening my front-end capabilities while exploring back-end technologies.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="container section-padding">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-code-branch"></i> Featured Projects</h2>
+            </div>
+            <div class="section-content">
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>StaySmart</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/CaledWlch1/staysmart.git" class="btn btn-github" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">A comprehensive scheduling application that helps users efficiently manage their time by creating and organizing schedules at various intervals. Features include appointment management, reminders, and multiple calendar views.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Calendar Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>ChairBanking</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/CaledWlch1/staysmart.git" class="btn btn-github" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">A secure personal finance application allowing users to manage accounts, track transactions, and monitor budgets. Emphasizes security through password protection and data encryption.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">Data Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Explore-PH-Tours</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/CaledWlch1/Explore-PH-Tours.git" class="btn btn-github" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">A comprehensive tour booking platform that helps users discover and book travel experiences in the Philippines. Features include package browsing, availability checking, and itinerary planning.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">User Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container section-padding">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+            </div>
+            <div class="section-content contact-grid">
+                <div class="contact-info">
+                    <p>I'm currently open to internship opportunities and project collaborations. Feel free to reach out via email or connect with me on professional networks.</p>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:bitacurapaulo5@gmail.com">bitacurapaulo5@gmail.com</a></li>
+                        <li><i class="fab fa-github"></i> <a href="https://github.com/CaledWlch1" target="_blank">github.com/CaledWlch1</a></li>
+                    </ul>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
     
-             In JavaScript, I have learned how to add interactivity to web pages using DOM manipulation, event handling, 
-             and basic functions. Although I am still improving my JavaScript skills, I am familiar with fundamental 
-             concepts such as variables, loops, conditionals, and basic API integration.<br><br>
-            
-             Additionally, I have a basic understanding of Java, where I have worked with object-oriented programming concepts 
-             like classes, objects, and methods. I have also experimented with simple Java applications, focusing on logical structures, 
-             loops, and conditional statements. While my experience with Java is still at the beginner level, I am continuing to learn and 
-             improve my understanding of the language.<br><br>
-            
-             At this stage, I am focused on strengthening my front-end development skills and gaining more hands-on experience with building 
-             interactive web pages. My goal is to continue expanding my knowledge and eventually explore back-end development to become a 
-             more well-rounded developer.
-    </section>
-    
-    <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="projects-container">
-
-            <div class="project" id="project1">
-                <h3>staysmart
-                </h3>
-                <p class="project-description">This scheduling program allows users to efficiently manage their time by creating and organizing daily, weekly, or monthly schedules. Users can add, update, and remove appointments, set reminders, and view their events in an easy-to-read calendar interface. The program is designed with a simple, user-friendly interface and supports multiple calendar views, making it ideal for both personal and professional use. Additional features include the ability to sync with online calendars, set recurring events, and manage tasks.
-
-                    <ul>
-                        <li><a href="https://github.com/CaledWlch1/staysmart.git">Github Link</a></li>
-                    </ul>
-                </p>
-            </div>
-
-            <div class="project" id="project2">
-                <h3>chairbanking
-                </h3>
-                <p class="project-description">chairbanking is a simple yet secure application that helps users manage their personal finances. The program allows users to create accounts, check balances, make deposits and withdrawals, and transfer money between accounts. Designed for ease of use, the program includes features like transaction history, account summaries, and even budget tracking. Security is prioritized, with features like password protection and account encryption to ensure the safety of user data. Whether for everyday banking or managing multiple accounts, this program provides a reliable solution.
-                    <ul>
-                        <li><a href="https://github.com/CaledWlch1/staysmart.git">Github Link</a></li>
-                    </ul>
-                </p>
-            </div>
-
-            <div class="project" id="project2">
-                <h3>Explore-PH-Tours
-                </h3>
-                <p class="project-description">The Touring Service application is designed to help users plan and book their travel experiences seamlessly. It offers a variety of features, including browsing a wide range of tour packages, checking availability, and viewing detailed itineraries. Users can search for tours based on their destination, interests, or travel dates, and easily compare different options. The program also allows users to make bookings, track their tour history, and receive recommendations based on preferences. Whether planning a solo adventure, family trip, or group excursion, the Touring Service ensures a smooth and memorable travel experience with real-time updates and customer support.
-                    <ul>
-                        <li><a href="https://github.com/CaledWlch1/Explore-PH-Tours.git">Github Link</a></li>
-                    </ul>
-                </p>
-            </div>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Paulo Bitacura. All rights reserved.</p>
         </div>
-    </section>
-    
-    
-    <section id="awards">
-        <h2>Awards & Certifications</h2>
-        <p>No Awards</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <ul>
-                <li><a href="mailto:bitacurapaulo5@gmail.com">Email</a></li>
-            </ul>
-        </p>
-    </section>
-    <script>
-        document.querySelectorAll('.project').forEach(project => {
-            project.addEventListener('click', function() {
-                this.classList.toggle('open');
-            });
-        });
-    </script>
-    
+    </footer>
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        let prevScrollpos = window.pageYOffset;
+        const navbar = document.getElementById("navbar");
+        
+        window.onscroll = function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+            
+            let currentScrollPos = window.pageYOffset;
+            
+            if (prevScrollpos > currentScrollPos) {
+                navbar.style.top = "0";
+            } else {
+                navbar.style.top = "-100px";
+            }
+            
+            prevScrollpos = currentScrollPos;
+        };
+    </script>
 </body>
 </html>
